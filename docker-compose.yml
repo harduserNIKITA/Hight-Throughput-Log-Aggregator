@@ -1,9 +1,7 @@
-version: "3.8"
-
 services:
     clickhouse:
         image: clickhouse/clickhouse-server:24.8-alpine
-        container_name: click-house
+        container_name: log_aggregator_ch
         ports:
             - "9000:9000"
             - "8123:8123"
